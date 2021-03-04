@@ -179,7 +179,7 @@
          tag += characters.charAt(Math.floor(Math.random() * charactersLength));
          }
 
-         var request = "https://sapi.peico.xyz//api/add?tag=" + tag + "&url=" + text;
+         var request = "https://sapi.peico.xyz/api/add?tag=" + tag + "&url=" + text;
 
          fetch(request).then(function(response){
          response.text().then(function(data) {
