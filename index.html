@@ -43,6 +43,7 @@
 
   <script type="text/javascript">
       var isMobile;
+      var isProcessing = false;
 
       function resize() {
          isMobile = isMobile();
@@ -67,7 +68,9 @@
        }
     }
       async function generateShortLink() {
-         var inputLink;
+         if(!isProcessing) {
+         isProcessing = true;
+           var inputLink;
 
          if(!isMobile) {
            inputLink = document.getElementById('long-url')
@@ -90,6 +93,9 @@
                   inputLink.value = error;
               });
           }
+         }
+
+         isProcessing = false;
          }
 
     function isMobile() {
