@@ -16,13 +16,14 @@
       <header>
           <div style="text-align: right;">
               <button class="logo" style="margin-right: 50%;">Peico</button>
-              <button class="repoButton" onclick="openRepo()">GitHub repo</button>
+              <button class="colorButton" onclick="openApp()">Google Play</button>
+              <button class="colorButton" onclick="openRepo()">GitHub repo</button>
           </div>
       </header>
 
       <div class="content" style="width: 80%; margin-left: 20%;">
           <p class="subTitle">Short links which are <strong>fast</strong> and <strong>secure</strong>. <br> <strong>Free</strong>. <strong>Forever</strong>.</p>
-          <p class="info">An open-source project developed by Kumaraswamy BG and <br> Hrichik Mazumder. 🏀</p>
+          <p class="info">An open-source project developed by Kumaraswamy BG and <br> Hrichik Mazumdar. 🏀</p>
           <input type="text" id= "long-url" placeholder= "Paste or type an URL and hit enter" onkeyup="keyPressed(event)">
       </div>
 
@@ -36,7 +37,7 @@
       </header>
 
       <div class="content">
-          <p class="info" style="font-size:3vw; text-align: center;">An open-source project developed <br> by Kumaraswamy BG and Hrichik Mazumder. 🏀</p>
+          <p class="info" style="font-size:3vw; text-align: center;">An open-source project developed <br> by Kumaraswamy BG and Hrichik Mazumdar. 🏀</p>
           <input type="text" id= "long-url-text" placeholder= "Enter an long URL here" onkeyup="keyPressed(event)">
       </div>
   </div>
@@ -59,6 +60,14 @@
 
       function openRepo() {
          window.open("https://github.com/XomaDev/peico-prod-home");
+      }
+
+      function openApp() {
+         if(Math.random().toString(2).substr(2, 1) == 1) {
+            window.open("https://play.google.com/store/apps/details?id=xyz.peico.app");
+         } else {
+            window.open("https://play.google.com/store/apps/details?id=appinventor.ai_bgpsdr.Peico");
+         }
       }
 
      function keyPressed(e) {
