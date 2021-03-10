@@ -10,8 +10,8 @@
         var url_string = window.location.href;
         var url = new URL(url_string);
          var clicks = url.searchParams.get("c");
-        var desktop = url.searchParams.get("d");
-        var phone = url.searchParams.get("p");
+        var desktop = parseInt(url.searchParams.get("d"));
+        var phone = parseInt(url.searchParams.get("p"));
         
 
         var data = google.visualization.arrayToDataTable([
