@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+         var clicks = url.searchParams.get("c");
+        var desktop = parseInt(url.searchParams.get("d"));
+        var phone = parseInt(url.searchParams.get("p"));
+        
+
+        var data = google.visualization.arrayToDataTable([
+          ['Device', 'Numbers Of Clicks'],
+          ['Phone',     phone],
+          ['Desktop',      desktop],
+        ]);
+
+        var options = {
+          title: 'Number Of Clicks From Different Devices',
+          legend: 'none',
+          pieSliceText: 'label',
+          backgroundColor: '#7FFFD4'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+        document.getElementById("totalclicks").innerHTML = "Total Clicks: " + clicks;
+      }
+      
+      
+    </script>
+  </head>
+  <body style="backgroundColor: '#7FFFD4'">
+   <center> <div id="piechart" style="width: 100%; height: 500px;"></div></center>
+    <br></br>
+  <center><p id="totalclicks">Loading...</p></center>
+  </body>
+</html>
