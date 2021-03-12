@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pico</title>
+  <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
+  <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/style.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="image/favicon.png">
+  
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "018f7946b8a244a09f43d9d88862102b"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</head>
+
+<body>
+<div class="site-wrapper">
+    <header class="site-header">
+        <div class="container">
+            <div class="row justify-content-center align-items-center position-relative">
+                <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+                  <!-- Brand Logo -->
+                    <div class="brand-logo">
+                        <a href=""><img src="image/main-logo.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3 offset-xl-1">
+                    <div class="header-btns justify-content-end">
+                        <button class="btn btn-outlined--primary btn-sm" onclick="openApp()">Download App</button>
+                    </div>
+                </div>
+                <!-- Menu Block -->
+                <div class="col-sm-1 col-6 col-lg-7 col-xl-6  position-static order-lg-2">
+                    <div class="main-navigation">
+                        <ul class="main-menu">
+                            <li class="menu-item "><a href="mailto: Support@peico.xyz">Support</a></li>
+                            <li class="menu-item"><a href="https://github.com/Peico/PeicoSource">GitHub repository</a></li>
+                            </ul>
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Area Starts -->
+    <div class="hero-area">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+              <div class="hero-content">
+                  <h5>Peico Link shortener</h5>
+                  <h2>Links that are fast and secure</h2>
+                  <p>Generate a short URL with no ads or tracking.</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-7 col-xl-6">
+                <div class="subscription-form">
+                  <form action="">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Enter a lengthy URL" id="linkInput" autocomplete="off">
+                          <br>
+                          <button class="submit-btn btn--hover-shine" onclick="processRequest()" id="submitBtn" type="submit">Shorten URL</button>
+                        </div>
+                        <p class="form-text">Trusted by many around the world!</p>
+                  </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Area Starts -->
+    <div class="feature-area">
+      <div class="container">
+        <div class="row mb-d-30">
+          <div class="col-lg-4 col-sm-6 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-edit-72"></i>
+              </div>
+              <div class="content">
+                <h5>Easy to Use</h5>
+                <p>Shorten long links with a click of a button.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-layers-3"></i>
+              </div>
+              <div class="content">
+                <h5>Responsive</h5>
+                <p>Our servers and links are all-time operational</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb--30">
+            <div class="feature-widget">
+              <div class="widget-icon">
+                <i class="icon icon-tablet-mobile"></i>
+    
+              </div>
+              <div class="content">
+                <h5>Platforms</h5>
+                <p>Peico link shortener is available on the web and the Android app.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Content Starts -->
+<div class="content-section-01">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6 col-md-5 col-xl-5">
+        <div class="content-left-image">
+          <picture style="cursor: pointer;">
+            <source type="image/avif" srcset="image/content01.avif" style="height: 65%; width: 65%;   border-radius: 7px;">
+            <img srcset="image/content01.png" style="height: 65%; width: 65%;   border-radius: 7px;">
+          </picture>
+          <!-- <img src="image/content01.png" alt="" style="height: 65%; width: 65%;   border-radius: 7px;"> -->
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-sm-6 col-md-7 col-xl-6 offset-xl-1">
+        <div class="content-right-content">
+            <h5>It's all you need</h5>
+            <h2>Short URLs with custom alias and safeguard</h2>
+            <p>Create short memorable text-tidy links that take less space and can be sharable easily.</p>
+            <div class="content-btn"><a href="https://community.appinventor.mit.edu/t/project-peico-making-an-url-shorter/27713?u=kumaraswamy_b.g" class="btn btn--white">Quick support</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-02">
+  <div class="container">
+    <div class="content-wrapper">
+        <div class="row ">
+            <div class="col-lg-7 col-md-7 col-xl-6 order-2 order-md-1">
+              <div class="content-left-content">
+                  <h5>It's everything</h5>
+                  <h2>Safety mesures intended</h2>
+                  <p>All URL is protected by safeguard if the link (long link) looks malicious and may dangerous then it's blocked.</p>
+              </div>
+              <div class="row justify-content-between">
+                  <div class="col-lg-6 col-sm-6">
+      
+                      <div class="feature-widget icon-top-round">
+                          <div class="widget-icon">
+                              <i class="icon icon-edit-72"></i>
+                          </div>
+      
+                          <div class="content">
+                              <h5>Custom links</h5>
+                              <p>Create links with custom alias, which gains more attractivity and clicks.</p>
+                          </div>
+                      </div>
+      
+                  </div>
+      
+                  <div class="col-lg-6 col-sm-6">
+                      <div class="feature-widget icon-top-round">
+                          <div class="widget-icon icon-round">
+                              <i class="icon icon-webpage"></i>
+                          </div>
+      
+                          <div class="content">
+                              <h5>Safe browsing</h5>
+                              <p>We make sure that the links are safe and not contain any malicious content. <b>Powered by Google Safe Browsing</b>.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-5 col-md-5 col-xl-4 offset-xl-2 order-1 order-md-2">
+              <div class="content-right-image">
+                <picture style="cursor: pointer;">
+                  <source type="image/avif" srcset="image/content02.avif">
+                  <img srcset="image/content02.png">
+                </picture>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Testimonial Starts -->
+<div class="tesimonial-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="testimonial-content">
+            <h5>Customers’ story</h5>
+            <h2>Many users are showing love.</h2>
+            <p>See what our users say about Peico</p>
+        </div>
+      </div>
+
+      <div class="col-xl-8">
+          <div class="masonry-with-columns">
+              <div class="testimonial-card">
+  
+                  <div class="card-content">
+                      <p>“I like the app and I see that the UI is very attractive and the most I like about the app is shortened links look good. This app meets my needs.”</p>
+                  </div>
+  
+                  <div class="card-id">
+                      <div class="id-img">
+                          <img src="image/dev.webp" alt="">
+                      </div>
+                      <div class="id-content">
+                          <h6>Salman Dev</h6>
+                          <span>Developer</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+  
+                  <div class="card-content">
+                      <p>“Simply the best. Better than all the rest. I’d recommend this product. The good thing is the links are safe to navigate without any ads or trackers”
+                      </p>
+                  </div>
+  
+                  <div class="card-id">
+                      <div class="id-img">
+                          <img src="image/user.png" alt="" style="height: 48px; width: 48px;">
+                      </div>
+                      <div class="id-content">
+                          <h6>A Google user</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+  
+                  <div class="card-content">
+                      <p>It's a pleasure to work on this project. Moreover, the project is open-source which I like the most.</p>
+                  </div>
+  
+                  <div class="card-id">
+                      <div class="id-img">
+                          <img src="image/hrichik.jpg" alt="" style="height: 48px; width: 48px;">
+                      </div>
+                      <div class="id-content">
+                          <h6>Hrichik Mazumdar</h6>
+                          <span>Developer at Peico</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pricing Section -->
+<section class="pricing-section section-spacing">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11">
+              <div class="section-title pb-lg--85">
+                  <span class="title-sm-text">It’s time to taste it</span>
+                  <h2>Ready to use our service? Choose a package.</h2>
+                </div>
+          </div>
+      </div>
+        
+            <div class="row mb-d-30">
+                <div class="col-lg-5 col-xl-4 offset-lg-1 offset-xl-2 col-md-6 mb--30">
+                    <div class="pricing-card  active">
+
+                        <div class="card-head">
+                            <h6>Basic</h6>
+                            <h2><span class="small-title">$</span><span class="big-txt" >0</span><span class="month">/month</span></h2>
+                            <p>Good for personal uses</p>
+                        </div>
+
+                        <div class="card-content">
+                            <ul class="pricing-list">
+                                <li><span><i class="icon icon-check-2"></i></span>Unlimited usage</li>
+                                <li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Custom
+                                    short URLs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-xl-4 col-md-6 mb--30">
+                    <div class="pricing-card">
+
+                        <div class="card-head">
+                            <h6>Pro</h6>
+                            <span class="card-badge">Popular</span>
+                            <h2><span class="small-title">$</span><span class="big-txt">1</span><span class="month" >/month</span></h2>
+                            <p>Good for small business to create custom URLs</p>
+                        </div>
+
+
+                        <div class="card-content">
+                            <ul class="pricing-list">
+                                <li><span><i class="icon icon-check-2"></i></span>Unlimited usage</li>
+                                <li><span><i class="icon icon-check-2"></i></span>Custom URLs</li>
+                                </li>
+                            </ul>
+                            <div class="card-btn">
+                                <a href="" class="btn btn--orange btn--hover-shine">Proceed</a>
+                            </div>
+                            <p>We accept bank transfers, Paypal and Paytm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- Footer Section -->
+  <div class="footer-section">
+    <div class="container">
+          <div class="row margin-decrese">
+            <div class="col-xl-4 col-lg-5 col-margin">
+              <div class="single-footer">
+                <div class="footer-title">
+                   <!-- Brand Logo -->
+                  <div class="brand-logo">
+                    <img src="./image/main-logo.svg" alt="">
+                  </div>
+                </div>
+                <div class="footer-text">
+                  <p>Big, small, online, offline, local. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups. </p>
+                </div>
+                <ul class="footer-social-list">
+                    <li>
+                      <a href="">
+                        <i class="icon icon-logo-fb-simple"></i>
+                      </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <i class="icon icon-logo-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                          <a href="">
+                            <i class="icon icon-google"></i>
+                          </a>
+                        </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 offset-xl-1 col-margin">
+                <div class="single-footer">
+                    <div class="footer-title">
+                        <h6>Menu</h6>
+                      </div>
+                      <ul class="footer-list">
+                        <li><a href="">Home page</a></li>
+                        <li><a href="https://github.com/Peico/PeicoSource">GitHub repository</a></li>
+                      </ul>
+                </div>
+            </div> 
+            <div class="col-lg-2 col-xl-3 col-sm-4 col-6 col-margin">
+                <div class="single-footer">
+                    <div class="footer-title">
+                        <h6>Support</h6>
+                      </div>
+                      <ul class="footer-list">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                      </ul>
+                </div>
+            </div>  
+            <div class="col-lg-2 col-sm-4 col-margin">
+                <div class="single-footer">
+                    <div class="footer-title">
+                        <h6>Products</h6>
+                      </div>
+                      <ul class="footer-list">
+                        <li><a href="https://play.google.com/store/apps/details?id=xyz.peico.app">Peico - Google play</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=appinventor.ai_bgpsdr.Peico">Peico lite - Google play</a></li>
+                      </ul>
+                </div>
+            </div> 
+          </div>
+    </div>
+  </div>
+</div>
+  <script src="./plugins/jquery/jquery.min.js"></script>
+  <script src="./plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
+  <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
+  <script src="./js/active.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
