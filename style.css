@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #F7F8FA;
+}
+
+header {
+   justify-content : space-between;
+   padding : 30px 7%;
+}
+
+.colorButton {
+   outline: none;
+   border: none;
+   background-color: #1998FF;
+   color: white;
+   cursor: pointer;
+   padding: 15px 24px;
+   margin-right: 5%;
+   border-radius : 3px;
+   border: 1px solid #1998FF;
+   font-family: Montserrat, sans-serif;
+   transition: all .8s ease 0s;
+}
+
+.colorButton:hover {
+   background-color: white;
+   color: #1998FF;
+}
+
+.logo {
+   color: #1E2F4E;
+   outline: none;
+   cursor: pointer;
+   border: none;
+   padding: 12px 24px;
+   font-family: Montserrat, sans-serif;
+   background-color: #FFFFFF00;
+   box-sizing: border-box;
+   font-size: 45px;
+   font-weight: 600;
+}
+
+.content {
+   margin-top: 4%;
+}
+
+.subTitle {
+   line-height: 1.2;
+   font-size: 40px;
+   font-weight: 600;
+   font-family: Poppins, sans-serif;
+}
+
+strong {
+  color: #1998ff;
+  font-weight: 700;
+}
+
+input {
+   margin-left: 16%;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 44px;
+   color: #1E2F4E;
+   text-align: center;
+   border-radius : 7px;
+   height: 85px;
+   width: 500px;
+   margin-top: 13%;
+   outline: none;
+   border: 0px solid;
+   font-size: 15px;
+   font-family: Montserrat, sans-serif;
+}
+
+.info {
+  font-family: Montserrat, sans-serif;
+}
+
+.phone {
+   margin-top: 30%;
+}
