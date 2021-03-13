@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pico</title>
+  <title></title>
+  <!-- Plugins CSS -->
   <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
+  <!-- fonts -->
   <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/style.css">
   <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./css/settings.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="image/favicon.png">
   
   <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "018f7946b8a244a09f43d9d88862102b"}'></script>
+  <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;018f7946b8a244a09f43d9d88862102b&quot;}"></script>
   <!-- End Cloudflare Web Analytics -->
 </head>
 
-<body>
+<body data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.997.0">
 <div class="site-wrapper">
+    <!-- Header Starts -->
     <header class="site-header">
         <div class="container">
             <div class="row justify-content-center align-items-center position-relative">
-                <div class="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+                <div>
                   <!-- Brand Logo -->
-                    <div class="brand-logo">
-                        <a href=""><img src="image/main-logo.svg" alt="" /></a>
+                    <div class="brand-logo" style="
+    margin-top: 30px;
+">
+                        <a href="/"><img src="image/main-logo.svg" alt="" style="
+    justify-content: center;
+"></a>
                     </div>
                 </div>
-                <div class="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3 offset-xl-1">
-                    <div class="header-btns justify-content-end">
-                        <button class="btn btn-outlined--primary btn-sm" onclick="openApp()">Download App</button>
-                    </div>
-                </div>
+                
                 <!-- Menu Block -->
-                <div class="col-sm-1 col-6 col-lg-7 col-xl-6  position-static order-lg-2">
-                    <div class="main-navigation">
-                        <ul class="main-menu">
-                            <li class="menu-item "><a href="mailto: Support@peico.xyz">Support</a></li>
-                            <li class="menu-item"><a href="https://github.com/Peico/PeicoSource">GitHub repository</a></li>
-                            </ul>
-                    </div>
-                    <div class="mobile-menu"></div>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -56,7 +50,7 @@
             <div class="col-lg-8 col-xl-7">
               <div class="hero-content">
                   <h5>Peico Link shortener</h5>
-                  <h2>Links that are fast and secure</h2>
+                  <h2>Links that are Fast and Secure</h2>
                   <p>Generate a short URL with no ads or tracking.</p>
               </div>
             </div>
@@ -65,9 +59,9 @@
                 <div class="subscription-form">
                   <form action="">
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Enter a lengthy URL" id="linkInput" autocomplete="off">
+                          <input id="shortenURL" type="text" class="form-control" placeholder="Your Great URL Here">
                           <br>
-                          <button class="submit-btn btn--hover-shine" onclick="processRequest()" id="submitBtn" type="submit">Shorten URL</button>
+                          <button onPress="generateShortLink()" class="submit-btn btn--hover-shine ">Shorten URL</button>
                         </div>
                         <p class="form-text">Trusted by many around the world!</p>
                   </form>
@@ -99,7 +93,7 @@
               </div>
               <div class="content">
                 <h5>Fast ⚡</h5>
-                <p>Get To Your URL destination in the blink of an eye</p>
+                <p>Get To Your URL destination in a blink of eye</p>
               </div>
             </div>
           </div>
@@ -111,7 +105,7 @@
               </div>
               <div class="content">
                 <h5>Shorten Links Anywhere 💻</h5>
-                <p>Peico link shortener is available on the web and the Android app.</p>
+                <p>Peico link shortener is available on the Web and as an Android app.</p>
               </div>
             </div>
           </div>
@@ -123,12 +117,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-sm-6 col-md-5 col-xl-5">
-        <div class="content-left-image">
-          <picture style="cursor: pointer;">
-            <source type="image/avif" srcset="image/content01.avif" style="height: 65%; width: 65%;   border-radius: 7px;">
-            <img srcset="image/content01.png" style="height: 65%; width: 65%;   border-radius: 7px;">
-          </picture>
-          <!-- <img src="image/content01.png" alt="" style="height: 65%; width: 65%;   border-radius: 7px;"> -->
+        <div class="content-left-image" style="
+    align-self: center;
+    align-items: center;
+">
+          <img src="https://i.imgur.com/Mwcxo4N.png" alt="" style="height: 100%;border-radius: 7px;align-items: center;align-self: center;">
         </div>
       </div>
 
@@ -137,7 +130,7 @@
             <h5>It's all you need</h5>
             <h2>Short URLs that don't break</h2>
             <p>Create short memorable text-tidy links that take less space and can be sharable easily.</p>
-            <div class="content-btn"><a href="https://community.appinventor.mit.edu/t/project-peico-making-an-url-shorter/27713?u=kumaraswamy_b.g" class="btn btn--white">Quick support</a></div>
+            <div class="content-btn"><a href="#" class="btn btn--white">Get Started</a></div>
         </div>
       </div>
     </div>
@@ -150,21 +143,21 @@
         <div class="row ">
             <div class="col-lg-7 col-md-7 col-xl-6 order-2 order-md-1">
               <div class="content-left-content">
-                  <h5>SAFETY FIRST!</h5>
-                  <h2>Safety mesures intended</h2>
-                  <p>Every link you click is reviewed by Google's Safe Browsing Systems</p>
+                  <h5>Safety First!</h5>
+                  <h2>Peico Links Are Secure</h2>
+                  <p>Every Peico link you click is checked by Google's Safe Browsing Systems</p>
               </div>
               <div class="row justify-content-between">
                   <div class="col-lg-6 col-sm-6">
       
                       <div class="feature-widget icon-top-round">
                           <div class="widget-icon">
-                            <i class="fas fa-smile"></i>
+                              <i class="fas fa-smile"></i>
                           </div>
       
                           <div class="content">
                               <h5>Bad Guys Out</h5>
-                              <p>Create Links That Build Trust, no doubt. When users know that links starting with peico.xyz are safe they are more likely to click your link</p>
+                              <p>Create Links That Build Trust, not doubt. When users know that links starting with peico.xyz are safe they are more likely to click your link</p>
                           </div>
                       </div>
       
@@ -173,7 +166,7 @@
                   <div class="col-lg-6 col-sm-6">
                       <div class="feature-widget icon-top-round">
                           <div class="widget-icon icon-round">
-                            <i class="fas fa-user-shield" style="font-size: smaller;"></i>
+                              <i class="fas fa-user-shield" style="font-size: smaller;"></i>
                           </div>
       
                           <div class="content">
@@ -186,11 +179,11 @@
             </div>
       
             <div class="col-lg-5 col-md-5 col-xl-4 offset-xl-2 order-1 order-md-2">
-              <div class="content-right-image">
-                <picture style="cursor: pointer;">
-                  <source type="image/avif" srcset="image/content02.avif">
-                  <img srcset="image/content02.png">
-                </picture>
+              <div class="content-right-image" style="height: 100%;vertical-align: middle;">
+                <img src="https://i.imgur.com/156gMu7.png" alt="" style="
+    padding-bottom: 25px;
+    vertical-align: bottom;
+">
               </div>
             </div>
           </div>
@@ -207,7 +200,7 @@
         <div class="testimonial-content">
             <h5>Customers’ story</h5>
             <h2>Many users are showing love.</h2>
-            <p>See what our users say about Peico</p>
+            <p>We designed and tested prototypes that helped identify pain points in the account creation process. Together, we shaped the new standard.</p>
         </div>
       </div>
 
@@ -245,10 +238,11 @@
                       </div>
                   </div>
               </div>
-              <div class="testimonial-card">
+              
+          <div class="testimonial-card">
   
                   <div class="card-content">
-                      <p>It's a pleasure to work on this project. Moreover, the project is open-source which I like the most.</p>
+                      <p>It's a pleasure to work on this project. Working To Make Internet A Safer And Fast.</p>
                   </div>
   
                   <div class="card-id">
@@ -260,8 +254,22 @@
                           <span>Developer at Peico</span>
                       </div>
                   </div>
-              </div>
-          </div>
+              </div><div class="testimonial-card">
+  
+                  <div class="card-content">
+                      <p>It's a pleasure to work on this project. Working To Make Internet A Safer And Fast.</p>
+                  </div>
+  
+                  <div class="card-id">
+                      <div class="id-img">
+                          <img src="image/hrichik.jpg" alt="" style="height: 48px; width: 48px;">
+                      </div>
+                      <div class="id-content">
+                          <h6>Kumaraswamy B.G</h6>
+                          <span>Developer at Peico</span>
+                      </div>
+                  </div>
+              </div></div>
       </div>
     </div>
   </div>
@@ -284,7 +292,7 @@
 
                         <div class="card-head">
                             <h6>Basic</h6>
-                            <h2><span class="small-title">$</span><span class="big-txt" >0</span><span class="month">/month</span></h2>
+                            <h2><span class="small-title">$</span><span class="big-txt">0</span><span class="month">/month</span></h2>
                             <p>Good for personal uses</p>
                         </div>
 
@@ -293,7 +301,10 @@
                                 <li><span><i class="icon icon-check-2"></i></span>Unlimited usage</li>
                                 <li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Custom
                                     short URLs</li>
-                            </ul>
+                            <li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Branded URLs</li><li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Private Analytics</li><li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Dashboard</li><li class="disable-opt"><span><i class="icon icon-check-2"></i></span>Support</li></ul>
+                            <div class="card-btn">
+                                <a href="" class="btn btn--primary btn--hover-shine">Try now!</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,22 +314,22 @@
 
                         <div class="card-head">
                             <h6>Pro</h6>
-                            <span class="card-badge">Popular</span>
-                            <h2><span class="small-title">$</span><span class="big-txt">1</span><span class="month" >/month</span></h2>
-                            <p>Good for small business to create custom URLs</p>
+                            <span class="card-badge">Most Popular</span>
+                            <h2><span class="small-title">$</span><span class="big-txt">1</span><span class="month">/month</span></h2>
+                            <p>Best for businesses to create branded URLs</p>
                         </div>
 
 
                         <div class="card-content">
                             <ul class="pricing-list">
                                 <li><span><i class="icon icon-check-2"></i></span>Unlimited usage</li>
-                                <li><span><i class="icon icon-check-2"></i></span>Custom URLs</li>
-                                </li>
-                            </ul>
+                                <li><span><i class="icon icon-check-2"></i></span>Custom Short URLs</li>
+                                
+                            <li><span><i class="icon icon-check-2"></i></span>Branded URLs</li><li><span><i class="icon icon-check-2"></i></span>Private Analytics</li><li><span><i class="icon icon-check-2"></i></span>Dashboard</li><li><span><i class="icon icon-check-2"></i></span>Support</li></ul>
                             <div class="card-btn">
                                 <a href="" class="btn btn--orange btn--hover-shine">Proceed</a>
                             </div>
-                            <p>We accept bank transfers, Paypal and Paytm</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -338,27 +349,31 @@
                   </div>
                 </div>
                 <div class="footer-text">
-                  <p>Make With Love In Kolkata, Karnataka and all over the world ♥</p>
+                  <p>Make With Love In Kolkata, Karnataka and all over the world.</p>
                 </div>
                 <ul class="footer-social-list">
-                  <li>
-                    <a href="https://twitter.com/PeicoLink">
-                      <i class="icon icon-logo-twitter"></i> <p>Follow us on Twitter</p>
-                    </a>
-                  </li>
+                    
+                    <li>
+                        <a href="https://twitter.com/PeicoLink">
+                          <i class="icon icon-logo-twitter"></i>
+                        </a>
+                      </li>
+                      
                   </ul>
               </div>
             </div>
             <div class="col-lg-2 col-sm-4 col-6 offset-xl-1 col-margin">
+                
             </div> 
             <div class="col-lg-2 col-xl-3 col-sm-4 col-6 col-margin">
                 <div class="single-footer">
                     <div class="footer-title">
-                        <h6>Support & Legal</h6>
+                        <h6>Support &amp; Legal</h6>
                       </div>
                       <ul class="footer-list">
-                        <li><a href="mailto:support@peico.xyz">Contact</a></li>
+                        <li><a href="mailto:support@peico.xyz">Contact Us</a></li>
                         <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms &amp; Conditions</a></li>
                       </ul>
                 </div>
             </div>  
@@ -377,12 +392,43 @@
     </div>
   </div>
 </div>
+  <script>
+    var isProcessing = false;
+          async function generateShortLink() {
+         if(!isProcessing) {
+         isProcessing = true;
+           var inputLink;
+           
+           inputLink = document.getElementById('shortenURL')
+
+         var longLink = inputLink.value;
+
+         if(longLink.match(
+            /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g
+         ) !== null && longLink != '') {
+              var request = "https://sapi.peico.xyz/api/add?url=" + longLink;
+
+              fetch(request).then(function(response){
+              response.text().then(function(data) {
+              inputLink.value = "https://peico.xyz/" + data;
+              });
+              }).catch(function(error) {
+                  inputLink.value = error;
+              });
+          }
+         }
+
+         isProcessing = false;
+         }
+  </script>
+  <!-- Vendor JS-->
   <script src="./plugins/jquery/jquery.min.js"></script>
   <script src="./plugins/jquery/jquery-migrate.min.js"></script>
   <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
   <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
+  <!-- Plugins JS -->
   <script src="./js/active.js"></script>
-  <script src="./js/script.js"></script>
-</body>
 
-</html>
+
+
+</body></html>
