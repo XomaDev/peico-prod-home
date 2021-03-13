@@ -9,7 +9,7 @@ async function processRequest() {
         button.innerHTML = 'Processing';
 
         var textBox = document.getElementById("linkInput");
-        var requestURL = "https://sapi.peico.xyz/api/add?URL=" + textBox.value;
+        var requestURL = "https://sapi.peico.xyz/api/add?url=" + textBox.value;
 
         console.log("GET " + requestURL);
 
